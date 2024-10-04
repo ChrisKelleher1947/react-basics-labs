@@ -94,3 +94,9 @@ form {
   width: 50%;
   margin: auto;
 }
+
+.priority {
+  font-style: italic;
+  font-size: 1em;
+  font-weight: bold;
+}
