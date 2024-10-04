@@ -9,7 +9,9 @@ const Task = (props) => {
             <button onClick={props.markDone} className='doneButton'>Done</button>
             <button className='deleteButton' onClick={props.deleteTask}>Delete</button>
             <p className= "description">{props.description}</p>
-            <p className= "priority">{props.priority}</p>
+            <p className= "priority" style={{
+                backgroundColor: props.priority === "High" ? 'red' :props.priority === "Medium" ? 'orange' : 'green'}}>
+                    {props.priority}</p>
             <p>{props.children}</p>
         </div>
     )
